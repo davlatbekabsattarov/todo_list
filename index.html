@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .label
+        {
+            margin-right: 1px;
+        }
+        form
+        {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            align-self: center;
+            border: 1px solid;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    </style>
+<div class="container" width="1440px">
+    <form>
+        <label for="task">Enter the task </label>
+        <input type="text" id="task" placeholder="TASK">
+        <br>
+        <label for="day" class="label">Task assigned for the day</label>
+        <select id="day">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+        </select>
+        <br>
+        <label for="time">Enter the time</label>
+        <input type="text" id="time" width="5px">
+        <br>
+        <label for="type">Choose the type</label>
+        <select id="type">
+        <option value="home">home</option>
+        <option value="personal">personal</option>
+        <option value="work">work</option>
+        <option value="else">else</option>
+        
+        </select>
+        <br>
+        <br>
+        <button onclick="addtasks()">add</button>
+        <button onclick="removeAll()">delete all</button>
+    </form>
+    
+<br>
+<table border="1" width="1000px"></table>
+
+</div>
+
+
+
+    <script src="./app.js"></script> 
+</body>
+</html>
